@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Samsung Sans', sans-serif;
+}
+
+img {
+    border-radius: 24px;
+}
+
+li {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.cabecera {
+    font-size: 235%;
+    padding-top: 2.5%;
+}
+
+.bloque-ini {
+    margin-top: 1.25%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    border-radius: 50px;
+    background-color: rgb(228, 228, 228);
+}
+
+.titulo-bloque-ini {
+    font-size: 175%;
+}
+
+.texto-bloque-explicacion {
+    margin-top: 1%;
+}
+
+.texto2-bloque-explicacion {
+    font-size: 175%;
+    margin-top: 3.5%;
+}
+
+
+#botonFlotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(228, 228, 228);
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: black;
+    text-decoration: none;
+}
+  
+#botonFlotante:hover {
+    background-color: rgb(148, 196, 255);
+}
