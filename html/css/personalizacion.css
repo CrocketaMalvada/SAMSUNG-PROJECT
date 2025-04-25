@@ -4,12 +4,55 @@
     font-family: 'Samsung Sans', sans-serif;
 }
 
+li {
+    list-style-type: none;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    vertical-align: middle;
+}
+
+body {
+    background-color: white;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.bloque-ini-titulo {
+    margin-top: 1.5%;
+}
+
+.ini-titulo {
+    font-size: 175%;
+}
+
+.lista-instrucciones-titulo {
+    font-size: 135%;
+    margin-top: 1.5%;
+    font-weight: bold;
+}
+
+.bloque-subtema {
+    background-color: rgb(228, 228, 228);
+    font-size: 125%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    border-radius: 50px;
+}
+
+.lista-instrucciones {
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
 
 #botonFlotante {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(224, 224, 224);
     padding: 15px 20px;
     border-radius: 24px;
     z-index: 1000;
@@ -18,5 +61,5 @@
 }
   
 #botonFlotante:hover {
-    background-color: rgb(148, 196, 255);
+    background-color: rgb(158, 158, 158);
 }
