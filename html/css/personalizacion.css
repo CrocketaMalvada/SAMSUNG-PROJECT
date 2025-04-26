@@ -9,6 +9,7 @@ li {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     vertical-align: middle;
+    font-weight: light;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
 
 .ini-titulo {
     font-size: 175%;
+    font-weight: bold;
 }
 
 .lista-instrucciones-titulo {
@@ -43,11 +45,6 @@ body {
     border-radius: 50px;
 }
 
-.lista-instrucciones {
-    border-bottom: 1px solid rgb(212, 212, 212);
-}
-
-
 #botonFlotante {
     position: fixed;
     bottom: 20px;
@@ -62,4 +59,46 @@ body {
   
 #botonFlotante:hover {
     background-color: rgb(158, 158, 158);
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+    
+    .bloque-ini-titulo {
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .bloque-subtema {
+        display: none;
+    }
+
+    li {
+        text-align: justify;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        line-height: 35px;
+    }
+
+    #botonFlotante {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(224, 224, 224);
+        padding: 15px 20px;
+        border-radius: 24px;
+        z-index: 1000;
+        color: black;
+        text-decoration: none;
+    }
+      
+    #botonFlotante:hover {
+        background-color: rgb(158, 158, 158);
+    }
+
 }
