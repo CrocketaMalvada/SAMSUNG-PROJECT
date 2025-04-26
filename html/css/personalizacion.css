@@ -48,11 +48,11 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(224, 224, 224);
+    background-color: #0381fe;
     padding: 15px 20px;
     border-radius: 24px;
     z-index: 1000;
-    color: black;
+    color: white;
     text-decoration: none;
 }
   
@@ -89,11 +89,11 @@ body {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: rgb(224, 224, 224);
+        background-color: #0381fe;
         padding: 15px 20px;
         border-radius: 24px;
         z-index: 1000;
-        color: black;
+        color: rgb(255, 255, 255);
         text-decoration: none;
     }
       
