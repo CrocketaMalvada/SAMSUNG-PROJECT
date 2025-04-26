@@ -250,7 +250,7 @@ t h1 {
     }
 
     #botonFlotante {
-        display: inline;
+        display: inline-block;
         position: fixed;
         bottom: 20px;
         right: 20px;
