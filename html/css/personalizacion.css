@@ -30,7 +30,6 @@ body {
 .lista-instrucciones-titulo {
     font-size: 135%;
     margin-top: 1.5%;
-    font-weight: bold;
 }
 
 .bloque-subtema {
@@ -83,6 +82,7 @@ body {
         padding-top: 5%;
         padding-bottom: 5%;
         line-height: 35px;
+        font-size: 85%;
     }
 
     #botonFlotante {
