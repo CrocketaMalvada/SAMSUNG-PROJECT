@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Samsung Sans', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    vertical-align: middle;
+    font-weight: light;
+}
+
+body {
+    background-color: white;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.bloque-ini-titulo {
+    margin-top: 1.5%;
+}
+
+.ini-titulo {
+    font-size: 175%;
+    font-weight: bold;
+}
+
+.lista-instrucciones-titulo {
+    font-size: 135%;
+    margin-top: 1.5%;
+}
+
+.bloque-subtema {
+    background-color: rgb(228, 228, 228);
+    font-size: 125%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    border-radius: 50px;
+}
+
+#botonFlotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+}
+  
+#botonFlotante:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+    
+    .bloque-ini-titulo {
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .bloque-subtema {
+        display: none;
+    }
+
+    li {
+        text-align: justify;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        line-height: 35px;
+        font-size: 85%;
+    }
+
+    #botonFlotante {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #0381fe;
+        padding: 15px 20px;
+        border-radius: 24px;
+        z-index: 1000;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+      
+    #botonFlotante:hover {
+        background-color: rgb(158, 158, 158);
+    }
+
+}
