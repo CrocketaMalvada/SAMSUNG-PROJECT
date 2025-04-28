@@ -1,19 +1,23 @@
+const darkModeToggle = document.getElementById('botonFlotante');
 const body = document.body;
+let timeoutId;
 
 function aplicarModoOscuro() {
     body.classList.add('dark-mode');
-    const darkModeToggle = document.getElementById('botonFlotante');
-    if (darkModeToggle) {
-        darkModeToggle.textContent = 'Desactivar Modo Oscuro';
-    }
+    darkModeToggle.textContent = 'Desactivar Modo Oscuro';
 }
 
 function aplicarModoClaro() {
     body.classList.remove('dark-mode');
-    const darkModeToggle = document.getElementById('botonFlotante');
-    if (darkModeToggle) {
-        darkModeToggle.textContent = 'Activar Modo Oscuro';
-    }
+    darkModeToggle.textContent = 'Activar Modo Oscuro';
+}
+
+function resetTimeout() {
+    clearTimeout(timeoutId);
+    darkModeToggle.classList.remove('hidden');
+    timeoutId = setTimeout(() => {
+        darkModeToggle.classList.add('hidden');
+    }, 3000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         aplicarModoClaro();
     }
 
-    const darkModeToggle = document.getElementById('botonFlotante');
     if (darkModeToggle) {
         darkModeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
@@ -35,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 darkModeToggle.textContent = 'Activar Modo Oscuro';
             }
+            resetTimeout();
         });
+
+        resetTimeout();
+        document.addEventListener('mousemove', resetTimeout);
+        document.addEventListener('keydown', resetTimeout);
+        document.addEventListener('touchstart', resetTimeout);
     }
 });

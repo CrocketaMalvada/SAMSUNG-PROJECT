@@ -47,7 +47,7 @@ body {
 
 #botonFlotante {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     background-color: #0381fe;
     padding: 15px 20px;
@@ -55,6 +55,8 @@ body {
     z-index: 1000;
     color: white;
     text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
 }
   
 #botonFlotante:hover {
@@ -86,7 +88,7 @@ body {
         font-size: 85%;
     }
 
-    #botonFlotante {
+    #botonFlotante-2 {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -98,7 +100,7 @@ body {
         text-decoration: none;
     }
       
-    #botonFlotante:hover {
+    #botonFlotante-2:hover {
         background-color: rgb(158, 158, 158);
     }
 
@@ -124,4 +126,15 @@ body {
     color: white;
     background-color: #6d6d6d;
     
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
