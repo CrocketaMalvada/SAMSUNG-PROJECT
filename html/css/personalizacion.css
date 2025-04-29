@@ -33,6 +33,10 @@ body {
     margin-top: 1.5%;
 }
 
+.bloque-final {
+    margin-bottom: 6%;
+}
+
 .bloque-subtema {
     background-color: rgb(228, 228, 228);
     font-size: 125%;
@@ -119,6 +123,10 @@ body {
       
     #botonFlotante-2:hover {
         background-color: rgb(158, 158, 158);
+    }
+
+    .bloque-final {
+        margin-bottom: 7em;
     }
 
 }

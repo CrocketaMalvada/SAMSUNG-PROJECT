@@ -23,6 +23,10 @@ body {
     margin-top: 1.5%;
 }
 
+.bloque-final {
+    margin-bottom: 6%;
+}
+
 .ini-titulo {
     font-size: 175%;
     font-weight: bold;
@@ -31,6 +35,23 @@ body {
 .lista-instrucciones-titulo {
     font-size: 135%;
     margin-top: 1.5%;
+}
+
+#botonFlotante-2 {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+}
+  
+#botonFlotante-2:hover {
+    background-color: rgb(158, 158, 158);
 }
 
 .bloque-subtema {
@@ -102,6 +123,10 @@ body {
       
     #botonFlotante-2:hover {
         background-color: rgb(158, 158, 158);
+    }
+
+    .bloque-final {
+        margin-bottom: 7em;
     }
 
 }
