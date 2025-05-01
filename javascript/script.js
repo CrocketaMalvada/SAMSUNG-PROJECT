@@ -17,7 +17,7 @@ function resetTimeout() {
     darkModeToggle.classList.remove('hidden');
     timeoutId = setTimeout(() => {
         darkModeToggle.classList.add('hidden');
-    }, 3000);
+    }, 2000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,3 +47,38 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('touchstart', resetTimeout);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const visitedLinks = getVisitedLinks();
+    const trackableLinks = document.querySelectorAll('.enlace-enlace');
+  
+    trackableLinks.forEach(link => {
+      if (visitedLinks.includes(link.href)) {
+        link.classList.add('visited-custom');
+      }
+  
+      link.addEventListener('click', function() {
+        saveVisitedLink(link.href); // Función para guardar la URL en una cookie
+        link.classList.add('visited-custom'); // Cambia el color inmediatamente
+      });
+    });
+  
+    function getVisitedLinks() {
+      const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)visitedLinks\s*=\s*([^;]*).*$)|^.*$/, "$1");
+      return cookieValue ? cookieValue.split(',') : [];
+    }
+  
+    function saveVisitedLink(url) {
+      let visited = getVisitedLinks();
+      if (!visited.includes(url)) {
+        visited.push(url);
+        document.cookie = `visitedLinks=${visited.join(',')}; expires=${getExpirationDate()}; path=/`;
+      }
+    }
+  
+    function getExpirationDate(days = 30) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      return date.toUTCString();
+    }
+  });

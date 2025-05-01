@@ -5,9 +5,10 @@
 }
 
 body {
-    background-color: rgb(234, 243, 255);
+
     padding-left: 1.5%;
     padding-right: 1.5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cabecera {
@@ -15,4 +16,171 @@ body {
     padding-top: 2.5%;
     padding-left: 1.5%;
     padding-right: 1.5%;
+}
+
+.bloque-ini-titulo {
+    margin-top: 1.5%;
+}
+
+.ini-titulo {
+    font-size: 175%;
+    font-weight: bold;
+}
+
+.info-devices {
+    display: none;
+}
+
+.lista-instrucciones-titulo {
+    font-size: 135%;
+    margin-top: 1.5%;
+    background-color: rgb(255, 219, 219);
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    border-radius: 50px;
+    color: red;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    vertical-align: middle;
+    font-weight: light;
+}
+
+#botonFlotante-2 {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+}
+  
+#botonFlotante-2:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+#botonFlotante {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+}
+  
+#botonFlotante:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+
+    .info-devices {
+        display: inline-flex;
+    }
+    
+    .bloque-ini-titulo {
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .bloque-subtema {
+        display: none;
+    }
+
+    .lista-instrucciones-titulo {
+        font-size: 100%;
+        margin-top: 1.5%;
+        background-color: rgb(255, 219, 219);
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        border-radius: 50px;
+        color: red;
+    }
+
+    li {
+        text-align: justify;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        line-height: 35px;
+        font-size: 85%;
+    }
+
+    #botonFlotante-2 {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #0381fe;
+        padding: 15px 20px;
+        border-radius: 24px;
+        z-index: 1000;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+      
+    #botonFlotante-2:hover {
+        background-color: rgb(158, 158, 158);
+    }
+
+    .bloque-final {
+        margin-bottom: 7em;
+    }
+
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f8f8f8;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dark-mode .content {
+    border-color: #555;
+}
+
+.dark-mode .bloque-subtema {
+    background-color: #6d6d6d;
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }

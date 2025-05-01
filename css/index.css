@@ -42,6 +42,17 @@ body {
     background-color: #bbd8ff;
 }
 
+.enlace-enlace {
+    background-color: #0381fe;
+    color: white;
+    text-decoration: none;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    border-radius: 24px;
+    padding-top: 0.15%;
+    padding-bottom: 0.15%;
+}
+
 .p-bloque-ini {
     font-size: 175%;
     margin-bottom: .5%;
@@ -189,11 +200,11 @@ t h1 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(250, 250, 250);
+    background-color: #0381fe;
     padding: 15px 20px;
     border-radius: 24px;
     z-index: 1000;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
     position: fixed;
@@ -210,6 +221,26 @@ t h1 {
     }
 
     .sub-texto {
+        font-size: 75%;
+        font-weight: lighter;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
+    }
+
+    .enlace-enlace {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        background-color: rgb(255, 219, 219);
+        color: red;
+    }
+
+    .informacion-texto{
         display: none;
     }
 
@@ -231,6 +262,8 @@ t h1 {
         padding-bottom: 1em;
         padding-right: 1em;
         padding-left: 1em;
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
 
     }
 
@@ -318,3 +351,8 @@ t h1 {
     opacity: 1;
     transform: translateX(0);
 }
+
+.visited-custom {
+    background-color: rgb(95, 218, 95) !important;
+    color: black;
+  }
