@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   
       link.addEventListener('click', function() {
-        saveVisitedLink(link.href); // Función para guardar la URL en una cookie
-        link.classList.add('visited-custom'); // Cambia el color inmediatamente
+        saveVisitedLink(link.href);
+        link.classList.add('visited-custom');
       });
     });
   
@@ -81,4 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
       date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
       return date.toUTCString();
     }
-  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const progress = document.querySelector('#loader .progress');
+  if (progress) {
+    progress.style.width = '90%';
+    progress.style.transition = 'width 0.8s ease-in-out';
+  }
+});

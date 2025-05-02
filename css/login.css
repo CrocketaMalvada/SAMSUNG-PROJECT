@@ -1,0 +1,133 @@
+* {
+    font-family: 'Samsung Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.login-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.enlaces-login {
+    font-size: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#botonFlotante-2 {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+}
+  
+#botonFlotante-2:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+#botonFlotante {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+}
+  
+#botonFlotante:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.dark-mode {
+    background-color: #333;
+}
+
+.dark-mode .container {
+    background-color: #555;
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode label {
+    color: white;
+}
+
+.dark-mode input {
+    background-color: gray;
+}
+
+.dark-mode .form-group input[type="text"],
+.dark-mode .form-group input[type="password"] {
+    border: none;
+}
+
+.dark-mode a {
+    color: white;
+}
