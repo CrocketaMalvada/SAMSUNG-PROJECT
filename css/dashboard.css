@@ -1,0 +1,119 @@
+* {
+    font-family: 'Samsung Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Samsung Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 24px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    padding-left: 1.5%;
+    border: 1px solid gray;
+}
+
+th {
+    background-color: #0381fe;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#botonFlotante-2 {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+}
+  
+#botonFlotante-2:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+#botonFlotante {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #0381fe;
+    padding: 15px 20px;
+    border-radius: 24px;
+    z-index: 1000;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+}
+  
+#botonFlotante:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 125%;
+    }
+
+    p {
+        font-size: 90%;
+    }
+}
+
+.dark-mode {
+    background-color: #333;
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode .dashboard-container {
+    background-color: gray;
+    color: white;
+}
+
+.dark-mode td {
+    background-color: lightgray;
+    border-radius: 0px;
+    border: 1px solid gray;
+    color: black;
+}

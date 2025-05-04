@@ -138,3 +138,10 @@ body {
 .dark-mode a {
     color: white;
 }
+
+.chium {
+    border: none;
+    background-color: #0381fe;
+    color: white;
+    border-radius: 24px;
+}
